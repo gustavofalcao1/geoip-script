@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear
-sudo apt install geoip-bin -y
+sudo apt install geoip-bin gedit -y
 clear
 echo ""
 echo "================================================================================"
@@ -38,7 +38,7 @@ then
   echo ""
   echo "                    Pressione <ENTER> para ver a nota!"
   read #pause
-  geoiplookup $ip > /home/gustavo/Documentos/Notes/GeoIP-Note.txt & gedit /home/gustavo/Documentos/Notes/GeoIP-Note.txt
+  geoiplookup $ip > ~/GeoIP-Note.txt & gedit ~/GeoIP-Note.txt
   exit
 else
   geoiplookup $ip
