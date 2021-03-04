@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear
-sudo apt install geoip-bin gedit -y
+sudo apt-get install geoip-bin gedit -y
 clear
 echo ""
 echo "================================================================================"
